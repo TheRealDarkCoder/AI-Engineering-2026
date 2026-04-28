@@ -1,6 +1,10 @@
 # Shark Tank — AI Startup Interrogator
 
 **Final Project · AI Engineering · University of Oulu 2026**
+
+Hosted: [https://sharktank.zuhayrium.com](https://sharktank.zuhayrium.com)
+
+
 Source: [github.com/TheRealDarkCoder/AI-Engineering-2026](https://github.com/TheRealDarkCoder/AI-Engineering-2026)
 
 ---
