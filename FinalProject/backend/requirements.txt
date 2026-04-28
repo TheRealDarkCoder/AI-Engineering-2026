@@ -1,0 +1,4 @@
+ag2[openai]
+flask
+flask-cors
+python-dotenv
