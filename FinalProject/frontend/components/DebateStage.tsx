@@ -32,7 +32,7 @@ export default function DebateStage({ state, children, compactBarShown = false }
             <polygon points="9,1 17,16 1,16" fill="#c9a84c" />
           </svg>
           <span
-            className="text-xs tracking-widest uppercase"
+            className="hidden sm:inline-block text-xs tracking-widest uppercase"
             style={{ color: '#555', fontFamily: 'var(--font-mono)' }}
           >
             Shark Tank
@@ -41,7 +41,7 @@ export default function DebateStage({ state, children, compactBarShown = false }
 
         <StatusPill label={state.currentStatus} activePhase={state.activePhase} />
 
-        <div className="w-24" /> {/* spacer for centering */}
+        <div className="hidden sm:block w-24" /> {/* spacer for centering */}
       </div>
 
       {/* Phase progress */}

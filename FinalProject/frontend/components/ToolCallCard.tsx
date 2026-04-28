@@ -89,7 +89,7 @@ export default function ToolCallCard({ toolCalls }: Props) {
           ⬡ Analyst called {toolCalls.length} tool{toolCalls.length !== 1 ? 's' : ''}
         </p>
       </div>
-      <div className="flex gap-3">
+      <div className="flex flex-col sm:flex-row gap-3">
         {fin && (
           <Panel
             title="run_financial_projection(...)"

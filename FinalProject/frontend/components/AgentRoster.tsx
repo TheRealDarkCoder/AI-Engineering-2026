@@ -15,7 +15,7 @@ export default function AgentRoster({ turns, activePhase }: Props) {
   const activeSpeaker: AgentName | null = lastTurn?.speaker ?? null
 
   return (
-    <div className="flex gap-2 px-4">
+    <div className="flex gap-1 sm:gap-2 px-2 sm:px-4">
       {AGENTS.map(name => (
         <AgentCard
           key={name}

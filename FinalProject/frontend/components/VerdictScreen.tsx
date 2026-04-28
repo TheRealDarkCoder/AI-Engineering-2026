@@ -92,7 +92,7 @@ export default function VerdictScreen({ verdictText, open, onCollapse, onExpand,
 
               <div className="h-1 w-full" style={{ background: color }} />
 
-              <div className="p-8">
+              <div className="p-4 sm:p-8">
                 {/* Decision word */}
                 <motion.div
                   className="text-center mb-6"
@@ -101,7 +101,7 @@ export default function VerdictScreen({ verdictText, open, onCollapse, onExpand,
                   transition={{ type: 'spring', stiffness: 320, damping: 12, delay: 0.2 }}
                 >
                   <p
-                    className="text-6xl font-black tracking-wider"
+                    className="text-4xl sm:text-6xl font-black tracking-wider"
                     style={{ color, fontFamily: 'var(--font-display)', textShadow: `0 0 40px ${color}60` }}
                   >
                     {v.decision || 'VERDICT'}
@@ -133,7 +133,7 @@ export default function VerdictScreen({ verdictText, open, onCollapse, onExpand,
                       <p style={{ color: '#ccc' }}>{v.rationale}</p>
                     </div>
                   )}
-                  <div className="grid grid-cols-2 gap-3 mt-1">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-1">
                     {v.marketRisk && (
                       <div className="rounded-lg p-3" style={{ background: '#f8717115', border: '1px solid #f8717120' }}>
                         <p className="text-xs mb-1" style={{ color: '#f87171' }}>Market Risk</p>
@@ -161,7 +161,7 @@ export default function VerdictScreen({ verdictText, open, onCollapse, onExpand,
 
                 {/* Action buttons */}
                 <motion.div
-                  className="flex gap-3"
+                  className="flex flex-col sm:flex-row gap-2 sm:gap-3"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.9 }}
@@ -215,7 +215,7 @@ export default function VerdictScreen({ verdictText, open, onCollapse, onExpand,
             transition={{ type: 'spring', stiffness: 340, damping: 28 }}
           >
             <div
-              className="flex items-center gap-3 px-4 py-3 rounded-2xl"
+              className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-3 rounded-2xl"
               style={{
                 background: '#0e0e0e',
                 border: `1px solid ${color}44`,

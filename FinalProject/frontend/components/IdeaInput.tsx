@@ -63,7 +63,7 @@ export default function IdeaInput({
       {/* Headline */}
       <motion.h1
         variants={item}
-        className="text-6xl sm:text-7xl font-bold text-center mb-4 leading-none tracking-tight"
+        className="text-5xl sm:text-7xl font-bold text-center mb-4 leading-none tracking-tight"
         style={{ fontFamily: "var(--font-display)", color: "#c9a84c" }}
       >
         Pitch the Sharks.
@@ -112,7 +112,7 @@ export default function IdeaInput({
         </div>
 
         {/* Preset chips */}
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
           {PRESETS.map((p) => (
             <button
               key={p}

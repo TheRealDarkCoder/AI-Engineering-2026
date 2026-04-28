@@ -64,22 +64,24 @@ export default function AgentCard({ name, isActive, isDimmed }: Props) {
         opacity: isDimmed ? 0.3 : 1,
       }}
       transition={{ type: 'spring', stiffness: 300, damping: 24 }}
-      className="flex flex-col items-center gap-2 px-4 py-3 rounded-xl flex-1 min-w-0"
+      className="flex flex-col items-center gap-1 sm:gap-2 px-1 sm:px-4 py-2 sm:py-3 rounded-xl flex-1 min-w-0"
       style={{
         background: isActive ? '#181818' : '#111111',
         border: `1px solid ${isActive ? color : '#1e1e1e'}`,
         boxShadow: isActive ? `0 0 20px ${color}30` : 'none',
       }}
     >
-      {AVATARS[name]}
-      <div className="text-center min-w-0">
+      <div className="w-6 h-6 sm:w-9 sm:h-9 flex items-center justify-center shrink-0 [&>svg]:w-full [&>svg]:h-full">
+        {AVATARS[name]}
+      </div>
+      <div className="text-center min-w-0 w-full">
         <p
           className="font-semibold text-sm truncate"
           style={{ color, fontFamily: 'var(--font-display)' }}
         >
           {name}
         </p>
-        <p className="text-xs truncate" style={{ color: '#555' }}>
+        <p className="text-[10px] sm:text-xs truncate" style={{ color: '#555' }}>
           {role}
         </p>
       </div>
